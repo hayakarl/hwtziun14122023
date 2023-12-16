@@ -27,7 +27,7 @@ function parseGradeFormDetails() {
     const subject = subjectBox.value;
     const grade = gradeBox.value;
 
-    const bonusGrade = (+grade * 2); //
+    const bonusGrade = (+grade + (studentName.length)); //
     const randomInteger = Math.floor(Math.random() * 100);
 
     return {
