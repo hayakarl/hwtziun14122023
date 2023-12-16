@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body onload="displayGradesFromStorage()">
+
+    <h1>Student Grades Calculator</h1>
+
+    <label>Student Name :</label>
+    <input type="text" id="studentNameBox">
+    <br/><br/>
+
+    <label>Subject :</label>
+    <input type="text" id="subjectBox">
+    <br/><br/>
+
+    <label>Grade :</label>
+    <input type="number" id="gradeBox">
+    <br/><br/>
+
+    <span>Bonus Grade >> </span>
+    <br/><br/>
+
+
+    <button onclick="showBonusGrade()">Show Bonus Grade</button>
+    <br/><br/>
+    <button onclick="saveGrade()">Save</button>
+
+    <br/><br/>
+
+    <div id="containerDiv"></div>
+
+</body>
+</html>
