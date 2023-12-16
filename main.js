@@ -4,7 +4,7 @@ function saveGrade() {
     existingGradesArray.push(newGrade);
     saveGradesArrayToStorage(existingGradesArray);
     displayGradesFromStorage();
-    // console.log(bonus);
+    showBonus() //
 }
 
 function getGradesArrayFromStorage() {
@@ -95,4 +95,18 @@ function deleteGrade(gradeId) {
 
     saveGradesArrayToStorage(updatedGradesArray);
     displayGradesFromStorage();
+}
+
+function showBonus() {
+
+    const studentNameBox = document.getElementById("studentNameBox");
+    const studentName = studentNameBox.value;
+
+    const showGradeBonus = document.getElementById("bonusGrade");
+
+    const gradeBox = document.getElementById("gradeBox");
+    const grade = gradeBox.value;
+    const bonusGrade = Math.min( 100, (+grade + 2*(studentName.length)));
+    
+    showGradeBonus.innerHTML = "Grade with Bonus :"+bonusGrade;
 }
