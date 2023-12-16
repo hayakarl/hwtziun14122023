@@ -4,6 +4,7 @@ function saveGrade() {
     existingGradesArray.push(newGrade);
     saveGradesArrayToStorage(existingGradesArray);
     displayGradesFromStorage();
+    document.querySelector('#bonusGrade span').innerText = 'Hello';
 }
 
 function getGradesArrayFromStorage() {
@@ -26,12 +27,10 @@ function parseGradeFormDetails() {
     const studentName = studentNameBox.value;
     const subject = subjectBox.value;
     const grade = gradeBox.value;
-
-    //const bonusGradeCalc = (+grade + 2*(studentName.length)); 
     const bonusGrade = Math.min( 100, (+grade + 2*(studentName.length)));
+    
     const randomInteger = Math.floor(Math.random() * 100);
     
-
     return {
         id: randomInteger,
         name: studentName,
@@ -39,6 +38,7 @@ function parseGradeFormDetails() {
         grade: grade,
         bonus: bonusGrade,
     };
+    
 }
 
 function saveGradesArrayToStorage(existingGradesArray) {
