@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
-<body onload="displayGradesFromStorage()">
+<header>
+    <img src="images/note.png" alt="" />
+    <h1 id="app-title">Student Grades Calculator</h1>
+</header>
 
-    <h1>Student Grades Calculator</h1>
+<body onload="displayGradesFromStorage()">
 
     <label>Student Name :</label>
     <input type="text" id="studentNameBox">
@@ -23,12 +26,9 @@
     <input type="number" id="gradeBox">
     <br/><br/>
 
-    <span>Bonus Grade >> </span>
+    <div id="bonusGrade"></div>
     <br/><br/>
 
-
-    <button onclick="showBonusGrade()">Show Bonus Grade</button>
-    <br/><br/>
     <button onclick="saveGrade()">Save</button>
 
     <br/><br/>
