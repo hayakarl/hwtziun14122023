@@ -14,26 +14,27 @@
 
 <body onload="displayGradesFromStorage()" id="tofes">
 
+  <div class="input">
     <label>Student Name :</label>
     <input type="text" id="studentNameBox">
     <br/><br/>
 
-    <label>Subject :</label>
+    <label>Student Subject :</label>
     <input type="text" id="subjectBox">
     <br/><br/>
 
-    <label>Grade :</label>
+    <label>Student Grade :</label>
     <input type="number" id="gradeBox">
     <br/><br/>
 
     <span id="bonusGrade">Grade With Bonus :</span>
     <br/><br/>
 
-    <button onclick="saveGrade()">Save and Show Grade with BONUS </button>
-
+    <button onclick="saveGrade()" id="saveBTN">Save and Show Grade with BONUS </button>
+  </div>  
     <br/><br/>
 
-    <div id="containerDiv"></div>
+  <div id="containerDiv"></div>
 
 </body>
 </html>

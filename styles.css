@@ -8,6 +8,28 @@ table, th, td {
 
 #tofes {
     background-color:bisque;
-    margin: 30px;
-    margin-left: 960px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    justify-content: center;
+    align-items: center;
+    padding-left: 550px;
+}
+
+label, span {
+    font-size:x-large;
+}
+
+#saveBTN {
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: purple;
+    color: white;
 }
