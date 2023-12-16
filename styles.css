@@ -5,3 +5,9 @@ table {
 table, th, td {
     border: 1px solid blue;
 }
+
+#tofes {
+    background-color:bisque;
+    margin: 30px;
+    margin-left: 960px;
+}
